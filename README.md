@@ -12,6 +12,9 @@ Use CocoaPods or copy those 2 files directly into the project.
 
 ## How to use it?
 
+    See the .h file for detailed documentation.
+    A quick example:
+    
     #import <MLFunctionalPackage/MLFunctionalPackage.h>
     
     NSLog(@"%@", [[[[[NSArray rangeFrom:10 to: 21] mll_filter: ^(NSNumber *n) { 
