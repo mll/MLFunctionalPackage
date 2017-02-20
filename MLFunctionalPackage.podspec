@@ -1,3 +1,12 @@
+
+Pod::Spec.new do |s|
+
+
+  s.name         = "MLFunctionalPackage"
+  s.version      = "1.0.2"
+  s.summary      = "A set of map-filter-reduce tools for Objective-C"
+
+  s.description  = <<-DESC
 # MLFunctionalPackage
 ## A set of map-filter-reduce tools for Objective-C
 
@@ -21,3 +30,15 @@ Use CocoaPods or copy those 2 files directly into the project.
     }] mll_reduce: ^(NSString *l, NSString *r) { 
        return [NSString stringWithFormat:@"%@, %@", l, r];
     }] stringByAppendingString: @"."]);
+DESC
+
+   s.homepage     = "https://github.com/mll/MLFunctionalPackage"
+   s.license   =  'MIT'
+   
+   s.author             = { "Marek Lipert" => "marek.lipert@gmail.com" }
+   s.ios.deployment_target = '5.0'
+   s.source       = { :git => "https://github.com/mll/MLFunctionalPackage.git", :tag => "1.0.2" }
+   s.source_files  = '*.{h,m}'
+   s.requires_arc = true
+
+end
